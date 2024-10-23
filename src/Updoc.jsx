@@ -3,7 +3,6 @@ import './Updoc.css'; // Import the CSS file for styling
 import { storage, firestore } from './firebase'; // Import Firebase storage and firestore
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; // Import getDownloadURL
 import { collection, addDoc } from 'firebase/firestore';
-import { v4 } from 'uuid';
 import Navbar from './Navbar';
 import Final from './Final';
 
