@@ -1,0 +1,48 @@
+/* Page4.css */
+.full {
+    padding: 3rem;
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width:88vw; /* Limiting width for better readability */
+    margin: 2rem auto; /* Center alignment and spacing */
+    overflow: hidden; /* Ensure contents are contained */
+  }
+  
+  #headingGoal {
+    font-size: 2.5rem; /* Prominent heading size */
+    color: #333; /* Dark color for readability */
+    margin-bottom: 1.5rem; /* Space below the heading */
+  }
+  
+  .para {
+    font-size: 1rem; /* Standard font size */
+    color: #555; /* Slightly lighter color for text */
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 1.5rem; /* Space below paragraphs */
+  }
+  
+  .para span {
+    font-weight: 600; /* Bold text for emphasis */
+    color: #007bff; /* Color to highlight important text */
+  }
+  
+  .read-more {
+    color: #007bff; /* Button-like color for interaction */
+    font-weight: 600; /* Bold text for visibility */
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .read-more:hover {
+    color: #0056b3; /* Darker color on hover for feedback */
+  }
+  
+  .hidden-text {
+    display: none; /* Hidden text initially */
+  }
+  
+  .show {
+    display: block; /* Show the expanded text */
+  }
+  

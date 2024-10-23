@@ -1,0 +1,129 @@
+/* ResultPage.css */
+
+/* Basic styles for the container and table */
+.result-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.result-header {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.result-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result-info {
+  flex: 1 1 50%; /* Takes up half of the container width by default */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.result-table th, .result-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.result-table th {
+  background-color: #f4f4f4;
+}
+
+/* Image container and download button */
+.result-image {
+  flex: 1 1 50%; /* Takes up the other half of the container width by default */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center; /* Center-align image and button */
+}
+
+.result-image img {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+  display: block;
+  margin-bottom: 10px; /* Space between image and button */
+}
+
+.download-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Back button styles */
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto; /* Center the button horizontally */
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .result-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .result-info, .result-image {
+    flex: 1 1 100%; /* Each takes full width in column layout */
+    margin-bottom: 20px; /* Space between stacked elements */
+  }
+
+  .result-header {
+    font-size: 24px;
+  }
+
+  .result-table {
+    font-size: 14px;
+  }
+
+  .result-table th, .result-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-header {
+    font-size: 20px;
+  }
+
+  .result-table {
+    font-size: 12px;
+  }
+
+  .result-table th, .result-table td {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,206 @@
+
+
+.container60 {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color:rgb(248, 239, 223);
+  border-radius: 8px;
+  box-shadow: 0 0 1rem rgb(133, 122, 101),
+  1px 2px 1.5rem white;
+}
+
+.header60 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header60 h1 {
+  font-size: 24px;
+  color: #212121;
+}
+
+.form-group60 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label60 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #212121;
+}
+
+.input-text60 {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.verify-button60 {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.verify-button60:hover {
+  background-color: #218838;
+}
+
+.verification-result60 {
+  margin-top: 20px;
+}
+
+.verification-result60 h2 {
+  font-size: 20px;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.verification-result60 p {
+  font-size: 16px;
+  color: #212121;
+  margin-bottom: 10px;
+ 
+}
+
+.result-image60 {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.download-button60 {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-button60:hover {
+  background-color: #0056b3;
+}
+
+#setting{
+  padding: 10px;
+}
+
+.btn {
+  display: block;
+  padding: 0.7em 1em;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: #d4af37;
+  letter-spacing: 0.1em;
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: 30px;
+}
+
+.cube {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.cube .bg-top {
+  position: absolute;
+  height: 10px;
+  background: #d4af37;
+  bottom: 100%;
+  left: 5px;
+  right: -5px;
+  transform: skew(-45deg, 0);
+  margin: 0;
+  transition: all 0.4s;
+}
+
+.cube .bg-top .bg-inner {
+  bottom: 0;
+}
+
+.cube .bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: #d4af37;
+  transition: all 0.4s;
+}
+
+.cube .bg-right {
+  position: absolute;
+  background: #d4af37;
+  top: -5px;
+  z-index: 0;
+  bottom: 5px;
+  width: 10px;
+  left: 100%;
+  transform: skew(0, -45deg);
+  transition: all 0.4s;
+}
+
+.cube .bg-right .bg-inner {
+  left: 0;
+}
+
+.cube .bg-inner {
+  background: #28282d;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+}
+
+.cube .text {
+  position: relative;
+  transition: all 0.4s;
+}
+
+.cube:hover .bg-inner {
+  background: #d4af37;
+  transition: all 0.4s;
+}
+
+.cube:hover .text {
+  color: #28282d;
+  transition: all 0.4s;
+}
+
+.cube:hover .bg-right,
+.cube:hover .bg,
+.cube:hover .bg-top {
+  background: #28282d;
+}
+
+.cube:active {
+  z-index: 9999;
+  animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(0.9);
+  }
+}

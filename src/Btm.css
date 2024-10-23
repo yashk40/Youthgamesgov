@@ -1,0 +1,70 @@
+/* Btm.css */
+
+.whole {
+    padding: 20px;
+    text-align: center; /* Center align text */
+    background-color:aliceblue;
+  }
+  
+.container{
+  width:88vw;
+  box-shadow: 2px 4px 1rem;
+  padding: 20px;
+  filter: drop-shadow(10px 10px 20px rgba(240, 248, 255, 0.5));
+
+}
+  
+  .container {
+    padding-top: 20px;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Media query for screens smaller than 700px */
+  @media (max-width: 700px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 4px 1rem;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
