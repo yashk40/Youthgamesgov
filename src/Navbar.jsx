@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Navbar.css';
-import {gsap} from 'gsap';
+import gsap from 'gsap';
 import Loader from './Loader';
 import { Link } from 'react-router-dom';
 
