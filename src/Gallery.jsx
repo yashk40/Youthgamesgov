@@ -10,16 +10,7 @@ const images = ['./gallery/img1.jpg','./gallery/img2.jpg','./gallery/img3.jpg','
 const ImageCards = () => {
   return (
     <div style={{backgroundColor:'whitesmoke'}}>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9618451181666722"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-9618451181666722"
-     data-ad-slot="3495603519"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+ 
         <Navbar/>
         <h1 id='gallery'   style={{ padding:'10px 10px 10px ',marginTop:"10px",borderRadius:'7px'}}  >Gallery</h1>
     <div className="ficard-container">
